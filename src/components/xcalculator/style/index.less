@@ -1,0 +1,75 @@
+:global{
+  .calculator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 350px;
+    height: 520px;
+    background: #000;
+    border-radius: 5px;
+  }
+  .cal-result{
+    color: #fff;
+    height: 100px;
+    text-align: right;
+    font-size: 50px;
+    line-height: 140px;
+    padding: 0 35px;
+  }
+  .cal-operate{
+    padding: 0 15px;
+    ul{
+      li{
+        display: flex;
+        margin-bottom: 15px;
+        span{
+          flex: 1;
+          text-align: center;
+          height: 68.75px;
+          line-height: 68.75px;
+          border-radius: 100%;
+          font-size: 30px;
+          cursor: pointer;
+          &:nth-child(2){
+            margin: 0 15px;
+          }
+          &:nth-child(3){
+            margin-right: 15px;
+          }
+        }
+        .cal-operate-symbol{
+          background: #a6a6a6;
+          color: #000;
+        }
+        .cal-operate-operation{
+          background: #fe9603;
+          color: #fff;
+          font-size: 40px;
+        }
+        .cal-operate-num{
+          background: #323232;
+          color: #fff;
+        }
+        .cal-operate-numLg{
+          background: #323232;
+          color: #fff;
+          flex: 2;
+          border-radius: 75px;
+          text-align: left;
+          text-indent: 25px;
+        }
+        &:last-child{
+          span{
+            &:nth-child(3){
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
